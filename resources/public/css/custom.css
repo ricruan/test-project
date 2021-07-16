@@ -1,0 +1,7 @@
+.ant-input-prefix{
+    left: 8px !important
+}
+
+.ant-input-affix-wrapper .ant-input:not(:first-child){
+    padding-left: 20px
+}

@@ -1,0 +1,25 @@
+;; WARNING
+;; The dev-config.edn file is used for local environment variables, such as database credentials.
+;; This file is listed in .gitignore and will be excluded from version control by Git.
+
+{:dev true
+ :port 3000
+ ;; when :nrepl-port is set the application starts the nREPL server on load
+ :nrepl-port 7000
+
+ ;; set your dev database connection URL here
+ :database-url "jdbc:log4jdbc:mysql://localhost:3306/pdb?user=root&password=1234&useSSL=false&characterEncoding=utf-8&serverTimezone=Hongkong"
+ :redis {:redis-host "redis host"
+         :redis-port 6379
+         :redis-password "input your password"
+         :redis-timeout-ms 3000
+         :redis-db 3}
+
+ :file-path ""
+ :qiniu {:access-key "Ci_VFCYmKwFGWgbIEFxTsGNd69amAaXtwiZr9vIR"
+         :secret-key "XSQNWYzsdcaiE9r68WyQQj13t1RpjuauMR_vx2JG"
+         :bucket "hcapplet"
+         :domain "https://hcapplet.3vyd.com/"
+         :prefix "files/"}
+
+}

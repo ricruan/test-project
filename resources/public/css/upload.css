@@ -1,0 +1,35 @@
+.ant-upload-list-picture-card .ant-upload-list-item-actions .anticon-left-circle, .ant-upload-list-picture-card .ant-upload-list-item-actions .anticon-right-circle
+{
+    z-index: 10;
+    width: 16px;
+    margin: 0 4px;
+    color: rgba(255,255,255,0.85);
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.ant-upload-list-picture-card .anticon-close-circle, .ant-upload-list-picture .anticon-close-circle {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    line-height: 1;
+    opacity: 1;
+}
+
+.error-item-title {
+    font-size: 8px;
+    text-align:center;
+    padding-top:5px;
+    color:#fff;
+    position: absolute !important;
+    bottom: 0px !important;
+    width: 100% !important;
+    /*height: 30% !important;*/
+    background-color: #f5222d;
+    opacity: 1 !important;
+    -webkit-transition: all .3s !important;
+    transition: all .3s !important;
+    content: "" !important;
+}

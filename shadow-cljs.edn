@@ -1,0 +1,41 @@
+;; shadow-cljs configuration
+{:dependencies [[re-frame "1.1.2"]
+                [reagent "1.0.0"]
+                [luminus-transit "0.1.1"]
+                [org.clojure/core.async "0.4.500"]
+                [kee-frame "1.1.2" :exclusions [metosin/reitit-core]]
+                [binaryage/devtools "0.9.10"]
+                [re-frisk "1.3.6"]
+                [metosin/reitit "0.3.9"]
+                [com.rpl/specter "1.1.3"]]
+
+ :source-paths ["src/cljc" "src/cljs" "env/dev/cljs"]
+ :nrepl {:port 7002}
+ :dev-http {8000 {:roots ["resources/public" "target/cljsbuild/public/dev"]}}
+ :builds
+ {:app
+  {:target :browser
+   :output-dir "target/cljsbuild/public/dev/js"
+   :asset-path "/js"
+   :modules {:app {:entries [test-project.app]}}
+   :devtools {:watch-dir "resources/public"
+              :loader-mode :eval
+              :preloads [re-frisk.preload]
+              :console-support true}
+   :closure-defines {"re_frame.trace.trace_enabled_QMARK_" true}
+   :dev
+   {:closure-defines {test-project.config/domain "http://localhost:3000"
+                      test-project.common.utils/print-log? true}}}
+  :test-app
+  {:target :browser
+   :output-dir "target/cljsbuild/public/test/js"
+   :asset-path "/js"
+   :modules {:app {:entries [test-project.app]}}
+   :release {:closure-defines {test-project.config/domain "http://test-host:port"}}}
+  :prod-app
+  {:target :browser
+   :output-dir "target/cljsbuild/public/prod/js"
+   :asset-path "/js"
+   :modules {:app {:entries [test-project.app]}}
+   :release {:closure-defines {test-project.config/domain "http://prod-host:port"}}}}}
+

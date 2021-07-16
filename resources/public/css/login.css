@@ -1,0 +1,80 @@
+.container {
+  background: "#f0f2f5";
+  background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+  width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding: 110px 0 144px 0;
+  position: relative;
+}
+
+.top {
+  text-align: center;
+}
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  height: 44px;
+  vertical-align: top;
+  margin-right: 16px;
+}
+
+.title {
+  font-size: 30px;
+  color: fade(#000, 85%);
+  font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  position: relative;
+  top: 2px;
+}
+
+.desc {
+  font-size: 14px;
+  color: fade(#000, 45%);
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.additional {
+   text-align: left;
+}
+
+.additional .submit {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.additional .forgot {
+    float: right;
+}
+
+.prefix-icon {
+    font-size: 14px;
+    color: fade(#000, 25%);
+}
+
+.main {
+  width: 368px;
+  margin: 0 auto;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

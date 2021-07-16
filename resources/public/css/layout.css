@@ -1,0 +1,60 @@
+.logo {
+  background: #02223F;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.logo-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.trigger {
+  font-size: 18px;
+  margin-left: 20px;
+  height: 64px;
+  padding: 20 24px;
+  transition: all 0.3s, padding 0s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.right {
+  float: right;
+  margin-right: 10px;
+  height: 100%;
+}
+
+.right .action {
+    cursor: pointer;
+    padding: 0 12px;
+    display: inline-block;
+    transition: all 0.3s;
+    height: 100%;
+}
+
+.right .action:hover {
+    background: rgba(0, 0, 0, 0.025);
+}
+
+.right .account .avatar {
+    margin-top: 20px;
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+.menu .ant-dropdown-menu-item {
+     min-width: 160px;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
