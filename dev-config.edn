@@ -8,7 +8,7 @@
  :nrepl-port 7000
 
  ;; set your dev database connection URL here
- :database-url "jdbc:log4jdbc:mysql://localhost:3306/pdb?user=root&password=1234&useSSL=false&characterEncoding=utf-8&serverTimezone=Hongkong"
+ :database-url "jdbc:log4jdbc:mysql://localhost:3306/pdb?user=root&password=1234&useSSL=false&characterEncoding=utf-8&serverTimezone=Hongkong&allowPublicKeyRetrieval=true"
  :redis {:redis-host "redis host"
          :redis-port 6379
          :redis-password "input your password"
